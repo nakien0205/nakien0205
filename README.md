@@ -4,7 +4,6 @@
 - 💞️ I’m looking to collaborate on (not yet)
 - 📫 How to reach me mail me :phongkhiem.waseco@gmail.com
 - 😄 Pronouns: Nah
-- ⚡ Fun fact: I used to be GM 500+ in League but i retired and only play for fun
 
 <!---
 nakien0205/nakien0205 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

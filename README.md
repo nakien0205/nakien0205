@@ -1,112 +1,67 @@
-<!-- Animated wave header -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Nguyen%20Trung%20Kien&fontSize=52&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=AI%20Engineering%20%C2%B7%20FPT%20University%20%C2%B7%20Ho%20Chi%20Minh%20City&descAlignY=58&descSize=16" alt="Nguyen Trung Kien" />
-</p>
+<p align="center"><img src="https://raw.githubusercontent.com/nakien0205/nakien0205/main/assets/v2/black-hole.svg" width="100%" alt="Black hole" /></p>
 
-<!-- Typing animation -->
-<p align="center">
-  <a href="https://github.com/nakien0205">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1200&color=58A6FF&center=true&vCenter=true&width=640&lines=I+build+things+that+solve+real+problems;Building+a+team+fairness+app+%E2%9A%96%EF%B8%8F;Next%3A+fire+%26+smoke+detection+on+edge+devices+%F0%9F%94%A5;Falling+down+attention+rabbit+holes+%F0%9F%90%87" alt="Typing SVG" />
-  </a>
-</p>
+<p align="center"><img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=22&pause=1100&color=FDE68A&center=true&vCenter=true&width=760&height=50&lines=Nothing%20escapes...;...not%20even%20curiosity;Falling%20into%20attention%20mechanisms" alt="typing" /></p>
 
-<p align="center">
-  <a href="mailto:phongkhiem.waseco@gmail.com"><img src="https://img.shields.io/badge/Email-111827?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/nguyen-trung-kien-jack"><img src="https://img.shields.io/badge/LinkedIn-111827?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <img src="https://komarev.com/ghpvc/?username=nakien0205&style=for-the-badge&color=2c5364&label=PROFILE+VIEWS" alt="Profile views" />
-</p>
-
----
-
-### 👋 About me
+### 🌀 Gravity well
 
 I build things that solve problems I've personally run into.
 
-My current project is a **team fairness app**, a productivity tool born from watching talented students get the same grade as people who coasted. The app tracks task completion with evidence, runs an AI contribution scorer, and routes results through a human review loop (leader → lecturer → peer grading) before anything is finalized. I built it without a frontend background, which meant learning system design, UI thinking, and how to use AI as a development partner, not just a subject of study.
+My current project is a **team fairness app**, a productivity tool born from watching talented students get the same grade as people who coasted. It tracks task completion with evidence, runs an AI contribution scorer, and routes results through a human review loop (leader → lecturer → peer grading) before anything is finalized. I built it without a frontend background, which meant learning system design, UI thinking, and how to use AI as a development partner.
 
 Upcoming: my thesis on **fire and smoke detection on edge devices**, working within the constraints of latency, model size, and limited hardware.
 
 I watch Andrej Karpathy build GPTs from scratch for fun. Attention mechanisms and tokenization are the kind of rabbit holes I don't mind falling into.
 
----
+### 🕳️ What's pulling me in
 
-### 🛠️ What I'm working on
-
-| | Project | What it is |
+| | Body | Mass |
 |---|---|---|
-| ⚖️ | **Team Fairness App** | Contribution scoring system with AI judging, evidence logging, and human-in-the-loop review |
-| 🔥 | **Edge Detection Thesis** | Fire and smoke detection optimized for edge deployment. Early stage, starting from pixel-level approaches |
-| 🧠 | **ML fundamentals** | Working through attention, transformers, and model internals, not just using them |
+| ⚖️ | **Team Fairness App**: AI judging, evidence logging, human review loop | supermassive |
+| 🔥 | **Edge Detection Thesis**: fire & smoke detection on edge devices | growing |
+| 🧠 | **ML fundamentals**: attention, transformers, model internals | infinite |
 
----
-
-### ⚡ Stack
+### 🧲 Matter on hand
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,fastapi,pytorch,opencv,git,github,vscode,linux&theme=dark" alt="Skills" />
-  </a>
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/NumPy-111827?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-  <img src="https://img.shields.io/badge/Pandas-111827?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://skillicons.dev/icons?i=python,fastapi,pytorch,opencv,git,linux&theme=dark" alt="stack" />
+  <br /><sub>+ NumPy · Pandas</sub>
 </p>
 
----
+### 📐 Laws of physics
 
-### 🧭 How I work
+```diff
+! start with a real problem, not a cool technology
+! seek feedback early — your own perspective is always biased
+! design for the person who won't read the instructions
+! resist overengineering; simplicity is the last thing you finish
+! when you don't know something, build through it
+```
+
+### 📊 Gravitational readings
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=800&color=8B949E&multiline=true&width=620&height=150&lines=%3E+start+with+a+real+problem%2C+not+a+cool+technology;%3E+seek+feedback+early+%E2%80%94+your+own+perspective+is+biased;%3E+design+for+the+person+who+won't+read+the+instructions;%3E+resist+overengineering%3B+simplicity+is+finished+last;%3E+when+you+don't+know+something%2C+build+through+it" alt="How I work" />
-</p>
-
----
-
-### 📊 GitHub Signal
-
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=nakien0205&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github&bg_color=0d1117" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nakien0205&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117" alt="Top languages" />
-</p>
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=nakien0205&theme=github-dark-blue&hide_border=true&background=0d1117" alt="GitHub streak" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=nakien0205&show_icons=true&hide_border=true&bg_color=000000&title_color=fbbf24&text_color=e7e5e4&icon_color=f97316" alt="stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nakien0205&layout=compact&hide_border=true&bg_color=000000&title_color=fbbf24&text_color=e7e5e4&icon_color=f97316" alt="languages" />
 </p>
 <p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=nakien0205&theme=github-compact&hide_border=true&area=true&bg_color=0d1117" alt="Contribution graph" />
+  <img src="https://streak-stats.demolab.com?user=nakien0205&hide_border=true&background=000000&ring=f97316&fire=f97316&currStreakNum=e7e5e4&sideNums=e7e5e4&currStreakLabel=fbbf24&sideLabels=fbbf24&dates=e7e5e4" alt="streak" />
 </p>
 
-<!-- Snake eating the contribution grid (generated by .github/workflows/snake.yml) -->
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nakien0205/nakien0205/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nakien0205/nakien0205/output/github-snake.svg" />
-    <img alt="Contribution snake" src="https://raw.githubusercontent.com/nakien0205/nakien0205/output/github-snake-dark.svg" />
-  </picture>
-</p>
-
----
-
-### 🏆 Off the clock
+### ✨ Escaped the event horizon
 
 <p align="center">
-  <img src="assets/grandmaster.png" width="640" alt="Promoted to Grandmaster" />
+  <img src="https://raw.githubusercontent.com/nakien0205/nakien0205/main/assets/grandmaster.png" width="640" alt="Promoted to Grandmaster" />
   <br />
   <em>I'm just that good...</em>
 </p>
 
----
-
-### 🤝 Open to
+### 📡 Send a signal
 
 AI/ML internships · research collaborations · feedback on the fairness app · anyone who's thought seriously about group dynamics and incentives
 
-```txt
-email      phongkhiem.waseco@gmail.com
-linkedin   linkedin.com/in/nguyen-trung-kien-jack
-portfolio  coming soon
-```
-
-<!-- Animated wave footer -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" alt="footer" />
+  <a href="mailto:phongkhiem.waseco@gmail.com"><img src="https://img.shields.io/badge/Email-1c1917?style=for-the-badge&logo=gmail&logoColor=fbbf24" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/nguyen-trung-kien-jack"><img src="https://img.shields.io/badge/LinkedIn-1c1917?style=for-the-badge&logo=linkedin&logoColor=fbbf24" alt="LinkedIn" /></a>
 </p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:7c2d12&height=110&section=footer" width="100%" alt="" />

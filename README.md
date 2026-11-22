@@ -8,7 +8,7 @@
 2. Res assure, your Network will increase.
 3. One glance is all it takes.
 
-Tribute to the legendary **@#%!$&** for creating.. ME.
+Tribute to the legendary <picture><source media="(prefers-color-scheme: dark)" srcset="assets/glitch-dark.svg" /><img src="assets/glitch-light.svg" alt="@#%!$&amp;" title="⚠ ERROR: this information exceeds human comprehension" height="22" align="top" /></picture> for creating.. ME.
 
 ### 🕳️ What's pulling me in
 

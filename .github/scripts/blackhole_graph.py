@@ -5,7 +5,8 @@ Usage: GITHUB_TOKEN=... python blackhole_graph.py <github-login> <output.svg>
 Each 16 s loop:
   1. a drop lands on the middle of the grid and a water ripple spreads out
   2. the ripple distorts every square as it passes (push out, pull back, swell, shrink)
-  3. a black hole spawns at the drop point and grows, swallowing the nearest squares as it grows
+  3. the nearest squares start falling in just before a black hole spawns at the drop point; it grows,
+     swallowing squares outward, while the "N ABSORBED" counter climbs as each ring is digested
   4. once every square is gone the hole shrinks away, the grid respawns from the centre out, repeat
 
 Squares are grouped into distance bands from the centre; each band has its own keyframes, so
@@ -45,8 +46,9 @@ BANDS = 36        # distance bands (more = smoother spread, bigger file)
 DROP = 0.0        # drop lands
 WAVE = (0.35, 2.4)  # ripple starts, seconds to reach the farthest square
 SPAWN = 3.6       # black hole appears
-EAT = (3.9, 6.2)  # first square starts falling, spread until the last one does
+EAT = (2.85, 6.4)  # first square starts falling (pre-emptively, before the hole appears), spread until the last one does
 FALL = 1.5        # seconds a square takes to spiral in
+CAPTION = 1.0     # caption fades in this long after the hole appears
 SHRINK = (11.7, 13.0)
 RESPAWN = (13.1, 1.1)  # respawn starts, spread from centre to edge
 RIPPLE = [(0, 0, 1), (.15, 1, 1.28), (.35, -.6, .82), (.55, .32, 1.12), (.75, -.14, .94), (.95, 0, 1)]  # (dt, push, size)
@@ -87,8 +89,8 @@ def render(cal):
         for day in week["contributionDays"]:
             x = left + ci * step + cell / 2
             y = top + day["weekday"] * step + cell / 2
-            cells.append((x - hx, y - hy, COLORS.get(day["contributionLevel"], COLORS["NONE"])))
-    far = max(math.hypot(dx, dy) for dx, dy, _ in cells)
+            cells.append((x - hx, y - hy, COLORS.get(day["contributionLevel"], COLORS["NONE"]), day["contributionCount"]))
+    far = max(math.hypot(dx, dy) for dx, dy, _, _ in cells)
 
     def tf(k=0, r="0deg", s="1", q="1"):
         # hole centre -> spin -> pull toward hole -> home position (+ ripple push) -> square's own size
@@ -104,7 +106,7 @@ def render(cal):
         st = [f"0%{{transform:{tf()};opacity:1}}"]
         for dt, k, q in RIPPLE:
             st.append(f"{pct(tw + dt)}{{transform:{tf(k, q=q)};animation-timing-function:ease-in-out}}")
-        st.append(f"{pct(ts)}{{transform:{tf()};opacity:1;animation-timing-function:cubic-bezier(.5,0,.95,.5)}}")
+        st.append(f"{pct(ts)}{{transform:{tf()};opacity:1;animation-timing-function:cubic-bezier(.4,0,.9,.55)}}")
         st.append(f"{pct(ts + FALL * .75)}{{opacity:1}}")
         st.append(f"{pct(ts + FALL)},{pct(tr - .02)}{{transform:{tf(r='var(--r)', s='.02')};opacity:0}}")
         st.append(f"{pct(tr)}{{transform:{tf(q='.3')};opacity:0;animation-timing-function:cubic-bezier(.2,.8,.3,1.2)}}")
@@ -112,15 +114,39 @@ def render(cal):
         css.append(f".b{b}{{animation-name:k{b}}}@keyframes k{b}{{{''.join(st)}}}")
 
     rects = []
-    for dx, dy, color in cells:
+    band_sum = [0] * BANDS
+    for dx, dy, color, count in cells:
         d = math.hypot(dx, dy)
         u = d / far
         band = min(BANDS - 1, int(u * BANDS))
+        band_sum[band] += count
         amp = 7 * (1 - .55 * u)
         ux, uy = (amp * dx / d, amp * dy / d) if d > 1 else (0, 0)
         rects.append(
             f'<rect class="b{band}" x="-5.5" y="-5.5" width="11" height="11" rx="2" fill="{color}" '
             f'style="--dx:{dx:.1f}px;--dy:{dy:.1f}px;--ux:{ux:.2f}px;--uy:{uy:.2f}px;--r:{240 + rng.uniform(0, 140):.0f}deg"/>')
+
+    # "N ABSORBED" counter: one text per running total, each shown from the moment its band is digested
+    total = cal["totalContributions"]
+    grid_sum = sum(band_sum) or 1
+    steps, run = [(0.0, 0)], 0
+    for b in range(BANDS):
+        if band_sum[b]:
+            run += band_sum[b]
+            u = (b + .5) / BANDS
+            steps.append((EAT[0] + u ** .9 * EAT[1] + FALL * .9, round(run / grid_sum * total)))
+    counter = []
+    for i, (t0, val) in enumerate(steps):
+        t1 = steps[i + 1][0] if i + 1 < len(steps) else T
+        on = "0%" if t0 == 0 else f"{pct(t0)}{{opacity:0}}{pct(t0 + .02)}"
+        css.append(f".n{i}{{animation:n{i} {T}s linear infinite both}}@keyframes n{i}{{0%{{opacity:0}}"
+                   f"{on}{{opacity:1;fill:#fff7ed}}{pct(t0 + .35)}{{fill:#fbbf24}}"
+                   + (f"{pct(t1)}{{opacity:1}}{pct(t1 + .02)},100%{{opacity:0}}}}" if t1 < T else "100%{opacity:1}}"))
+        counter.append(f'<text class="n{i}" x="{{X}}" y="30" text-anchor="end" font-family="{MONO}" font-size="11" '
+                       f'letter-spacing="2" fill="#fbbf24">{val} ABSORBED</text>')
+    cap_on = SPAWN + CAPTION
+    css.append(f".cap{{animation:cap {T}s ease-out infinite both}}@keyframes cap{{0%,{pct(cap_on)}{{opacity:0}}"
+               f"{pct(cap_on + .7)},{pct(SHRINK[1])}{{opacity:1}}{pct(SHRINK[1] + .6)},100%{{opacity:0}}}}")
 
     t_end = WAVE[0] + WAVE[1]
     css.append(f"""
@@ -132,7 +158,7 @@ def render(cal):
 {pct(DROP + .6)}{{transform:{H_AT} scale(.7);opacity:.8}}{pct(DROP + 1.1)},100%{{transform:{H_AT} scale(.4);opacity:0}}}}
 .hole{{animation:hole {T}s infinite both}}
 @keyframes hole{{0%,{pct(SPAWN)}{{transform:{H_AT} scale(0);opacity:0;animation-timing-function:cubic-bezier(.2,.7,.4,1)}}
-{pct(SPAWN + .15)}{{opacity:1}}{pct(EAT[0] + 2.2)}{{transform:{H_AT} scale(1)}}
+{pct(SPAWN + .15)}{{opacity:1}}{pct(SPAWN + 2.5)}{{transform:{H_AT} scale(1)}}
 {pct(EAT[0] + EAT[1] + .6)},{pct(SHRINK[0])}{{transform:{H_AT} scale(1.6);opacity:1;animation-timing-function:cubic-bezier(.5,0,.8,.6)}}
 {pct(SHRINK[1])}{{transform:{H_AT} scale(0);opacity:1}}{pct(SHRINK[1] + .05)},100%{{transform:{H_AT} scale(0);opacity:0}}}}
 .flash{{animation:flash {T}s ease-out infinite both}}
@@ -154,7 +180,6 @@ def render(cal):
                  f'stroke-linecap="round" stroke-dasharray="{dash:.0f} {rx * .2:.0f}" opacity=".9">'
                  f'<animate attributeName="stroke-dashoffset" values="0;-{(dash + rx * .2) * 4:.0f}" dur="{dur}s" repeatCount="indefinite"/></ellipse>')
 
-    total = cal["totalContributions"]
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">
 <defs><radialGradient id="g"><stop offset=".2" stop-color="#f97316" stop-opacity=".55"/><stop offset="1" stop-color="#f97316" stop-opacity="0"/></radialGradient>
 <radialGradient id="fl"><stop offset="0" stop-color="#fff7ed"/><stop offset=".4" stop-color="#fde68a" stop-opacity=".6"/><stop offset="1" stop-color="#fde68a" stop-opacity="0"/></radialGradient>
@@ -164,13 +189,13 @@ def render(cal):
 <rect width="{W}" height="{H}" rx="10" fill="#000"/>
 {stars}
 <text x="{left:.0f}" y="30" font-family="{MONO}" font-size="11" letter-spacing="3" fill="#a8a29e">CONTRIBUTIONS · LAST 12 MONTHS</text>
-<text x="{left + gw:.0f}" y="30" text-anchor="end" font-family="{MONO}" font-size="11" letter-spacing="2" fill="#fbbf24">{total} ABSORBED</text>
+{"".join(counter).replace("{X}", f"{left + gw:.0f}")}
 <g clip-path="url(#pond)">{rings}</g>
 <g class="c">{"".join(rects)}</g>
 <circle r="7" fill="url(#dr)" class="drop"/>
 <g class="hole"><circle r="70" fill="url(#g)"/><circle r="46" fill="url(#fl)" class="flash"/>{disk}
 <circle r="17" fill="none" stroke="#fde68a" stroke-width="2"/><circle r="15.5" fill="#000"/></g>
-<text x="{W / 2}" y="{H - 16}" text-anchor="middle" font-family="{SANS}" font-size="12" letter-spacing="3" fill="#78716c">nothing escapes · not even commits</text>
+<text x="{W / 2}" y="{H - 16}" text-anchor="middle" font-family="{SANS}" font-size="12" letter-spacing="3" fill="#78716c" class="cap">nothing escapes · not even commits</text>
 </svg>"""
 
 

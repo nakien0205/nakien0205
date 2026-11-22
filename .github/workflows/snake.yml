@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate profile animations
 
 on:
   schedule:
@@ -15,6 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate black hole contribution graph
+        run: python .github/scripts/blackhole_graph.py "${{ github.repository_owner }}" dist/blackhole-graph.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate snake SVGs
         uses: Platane/snk@v3
         with:

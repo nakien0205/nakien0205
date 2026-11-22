@@ -16,9 +16,9 @@ I watch Andrej Karpathy build GPTs from scratch for fun. Attention mechanisms an
 
 | | Body | Mass |
 |---|---|---|
-| ⚖️ | **Team Fairness App**: AI judging, evidence logging, human review loop | supermassive |
-| 🔥 | **Edge Detection Thesis**: fire & smoke detection on edge devices | growing |
-| 🧠 | **ML fundamentals**: attention, transformers, model internals | infinite |
+| ⚖️ | **Team Fairness App**: AI judging, evidence logging, human review loop | 🌍 supermassive |
+| 🔥 | **Edge Detection Thesis**: fire & smoke detection on edge devices | 📈 growing |
+| 🧠 | **ML fundamentals**: attention, transformers, model internals | ∞ infinite |
 
 ### 🧲 Matter on hand
 
@@ -29,12 +29,12 @@ I watch Andrej Karpathy build GPTs from scratch for fun. Attention mechanisms an
 
 ### 📐 Laws of physics
 
-```diff
-! start with a real problem, not a cool technology
-! seek feedback early — your own perspective is always biased
-! design for the person who won't read the instructions
-! resist overengineering; simplicity is the last thing you finish
-! when you don't know something, build through it
+```txt
+LAW I     start with a real problem, not a cool technology
+LAW II    seek feedback early — your own perspective is always biased
+LAW III   design for the person who won't read the instructions
+LAW IV    resist overengineering; simplicity is the last thing you finish
+LAW V     when you don't know something, build through it
 ```
 
 ### 📊 Gravitational readings
@@ -45,6 +45,9 @@ I watch Andrej Karpathy build GPTs from scratch for fun. Attention mechanisms an
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=nakien0205&hide_border=true&background=000000&ring=f97316&fire=f97316&currStreakNum=e7e5e4&sideNums=e7e5e4&currStreakLabel=fbbf24&sideLabels=fbbf24&dates=e7e5e4" alt="streak" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nakien0205/nakien0205/output/blackhole-graph.svg" width="100%" alt="My contributions spiralling into a black hole" />
 </p>
 
 ### ✨ Escaped the event horizon

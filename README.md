@@ -13,7 +13,6 @@
 <p align="center">
   <a href="mailto:phongkhiem.waseco@gmail.com"><img src="https://img.shields.io/badge/Email-111827?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://www.linkedin.com/in/nguyen-trung-kien-jack"><img src="https://img.shields.io/badge/LinkedIn-111827?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://your-portfolio-link.com"><img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
   <img src="https://komarev.com/ghpvc/?username=nakien0205&style=for-the-badge&color=2c5364&label=PROFILE+VIEWS" alt="Profile views" />
 </p>
 
@@ -83,6 +82,16 @@ I watch Andrej Karpathy build GPTs from scratch for fun. Attention mechanisms an
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nakien0205/nakien0205/output/github-snake.svg" />
     <img alt="Contribution snake" src="https://raw.githubusercontent.com/nakien0205/nakien0205/output/github-snake-dark.svg" />
   </picture>
+</p>
+
+---
+
+### 🏆 Off the clock
+
+<p align="center">
+  <img src="assets/grandmaster.png" width="640" alt="Promoted to Grandmaster" />
+  <br />
+  <em>I'm just that good...</em>
 </p>
 
 ---

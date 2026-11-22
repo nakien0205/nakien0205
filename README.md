@@ -4,21 +4,19 @@
 
 ### 🌀 Gravity well
 
-I build things that solve problems I've personally run into.
+1. I've witness the born of a new age, pay Attention and you might grasp infinity itself.
+2. Res assure, your Network will increase.
+3. One glance is all it takes.
 
-My current project is a **team fairness app**, a productivity tool born from watching talented students get the same grade as people who coasted. It tracks task completion with evidence, runs an AI contribution scorer, and routes results through a human review loop (leader → lecturer → peer grading) before anything is finalized. I built it without a frontend background, which meant learning system design, UI thinking, and how to use AI as a development partner.
-
-Upcoming: my thesis on **fire and smoke detection on edge devices**, working within the constraints of latency, model size, and limited hardware.
-
-I watch Andrej Karpathy build GPTs from scratch for fun. Attention mechanisms and tokenization are the kind of rabbit holes I don't mind falling into.
+Tribute to the legendary **@#%!$&** for creating.. ME.
 
 ### 🕳️ What's pulling me in
 
 | | Body | Mass |
 |---|---|---|
-| ⚖️ | **Team Fairness App**: AI judging, evidence logging, human review loop | 🌍 supermassive |
-| 🔥 | **Edge Detection Thesis**: fire & smoke detection on edge devices | 📈 growing |
-| 🧠 | **ML fundamentals**: attention, transformers, model internals | ∞ infinite |
+| ⚖️ | **Team Fairness App**: AI judging, evidence logging, human review loop | Supermassive 🌍 |
+| 🔥 | **Edge Detection Thesis**: fire & smoke detection on edge devices | Growing 📈 |
+| 🧠 | **ML fundamentals**: attention, transformers, autobots, and decepticons | Infinite ∞ |
 
 ### 🧲 Matter on hand
 
@@ -27,14 +25,14 @@ I watch Andrej Karpathy build GPTs from scratch for fun. Attention mechanisms an
   <br /><sub>+ NumPy · Pandas</sub>
 </p>
 
-### 📐 Laws of physics
+### 📐 Laws of Creation
 
 ```txt
-LAW I     start with a real problem, not a cool technology
-LAW II    seek feedback early — your own perspective is always biased
-LAW III   design for the person who won't read the instructions
-LAW IV    resist overengineering; simplicity is the last thing you finish
-LAW V     when you don't know something, build through it
+LAW I     In all order, a secret disorder
+LAW II    Open your mind, even to the Void
+LAW III   Design for Mortals, not Gods
+LAW IV    Vision, Might, Guile, and Sacrifice
+LAW V     You cannot be a god, you must be THE GOD 
 ```
 
 ### 📊 Gravitational readings
@@ -50,12 +48,12 @@ LAW V     when you don't know something, build through it
   <img src="https://raw.githubusercontent.com/nakien0205/nakien0205/output/blackhole-graph.svg" width="100%" alt="My contributions spiralling into a black hole" />
 </p>
 
-### ✨ Escaped the event horizon
+### ✨ Beyond all Realms
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/nakien0205/nakien0205/main/assets/grandmaster.png" width="640" alt="Promoted to Grandmaster" />
   <br />
-  <em>I'm just that good...</em>
+  <em>Throughout Heaven and Hell, I alone am the chosen one</em>
 </p>
 
 ### 📡 Send a signal

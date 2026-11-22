@@ -1,20 +1,29 @@
-<h1 align="center">Nguyen Trung Kien</h1>
+<!-- Animated wave header -->
 <p align="center">
-  <strong>AI Engineering student · FPT University · Ho Chi Minh City</strong>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Nguyen%20Trung%20Kien&fontSize=52&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=AI%20Engineering%20%C2%B7%20FPT%20University%20%C2%B7%20Ho%20Chi%20Minh%20City&descAlignY=58&descSize=16" alt="Nguyen Trung Kien" />
 </p>
+
+<!-- Typing animation -->
 <p align="center">
-  <a href="mailto:phongkhiem.waseco@gmail.com">Email</a>
-  ·
-  <a href="https://www.linkedin.com/in/nguyen-trung-kien-jack">LinkedIn</a>
-  ·
-  <a href="https://your-portfolio-link.com">Portfolio</a>
+  <a href="https://github.com/nakien0205">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1200&color=58A6FF&center=true&vCenter=true&width=640&lines=I+build+things+that+solve+real+problems;Building+a+team+fairness+app+%E2%9A%96%EF%B8%8F;Next%3A+fire+%26+smoke+detection+on+edge+devices+%F0%9F%94%A5;Falling+down+attention+rabbit+holes+%F0%9F%90%87" alt="Typing SVG" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="mailto:phongkhiem.waseco@gmail.com"><img src="https://img.shields.io/badge/Email-111827?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/nguyen-trung-kien-jack"><img src="https://img.shields.io/badge/LinkedIn-111827?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://your-portfolio-link.com"><img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <img src="https://komarev.com/ghpvc/?username=nakien0205&style=for-the-badge&color=2c5364&label=PROFILE+VIEWS" alt="Profile views" />
 </p>
 
 ---
 
+### 👋 About me
+
 I build things that solve problems I've personally run into.
 
-My current project is a **team fairness app** — a productivity tool born from watching talented students get the same grade as people who coasted. The app tracks task completion with evidence, runs an AI contribution scorer, and routes results through a human review loop (leader → lecturer → peer grading) before anything is finalized. I built it without a frontend background, which meant learning system design, UI thinking, and how to use AI as a development partner — not just a subject of study.
+My current project is a **team fairness app**, a productivity tool born from watching talented students get the same grade as people who coasted. The app tracks task completion with evidence, runs an AI contribution scorer, and routes results through a human review loop (leader → lecturer → peer grading) before anything is finalized. I built it without a frontend background, which meant learning system design, UI thinking, and how to use AI as a development partner, not just a subject of study.
 
 Upcoming: my thesis on **fire and smoke detection on edge devices**, working within the constraints of latency, model size, and limited hardware.
 
@@ -22,53 +31,63 @@ I watch Andrej Karpathy build GPTs from scratch for fun. Attention mechanisms an
 
 ---
 
-### What I'm working on
+### 🛠️ What I'm working on
 
-| Project | What it is |
-|---|---|
-| Team Fairness App | Contribution scoring system with AI judging, evidence logging, and human-in-the-loop review |
-| Edge Detection Thesis | Fire and smoke detection optimized for edge deployment — early stage, starting from pixel-level approaches |
-| ML fundamentals | Working through attention, transformers, and model internals — not just using them |
+| | Project | What it is |
+|---|---|---|
+| ⚖️ | **Team Fairness App** | Contribution scoring system with AI judging, evidence logging, and human-in-the-loop review |
+| 🔥 | **Edge Detection Thesis** | Fire and smoke detection optimized for edge deployment. Early stage, starting from pixel-level approaches |
+| 🧠 | **ML fundamentals** | Working through attention, transformers, and model internals, not just using them |
 
 ---
 
-### Stack
+### ⚡ Stack
 
-<p>
-  <img src="https://img.shields.io/badge/Python-111827?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/FastAPI-111827?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/PyTorch-111827?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,fastapi,pytorch,opencv,git,github,vscode,linux&theme=dark" alt="Skills" />
+  </a>
+</p>
+<p align="center">
   <img src="https://img.shields.io/badge/NumPy-111827?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
   <img src="https://img.shields.io/badge/Pandas-111827?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-  <img src="https://img.shields.io/badge/OpenCV-111827?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
 </p>
 
 ---
 
-### How I work
-
-```txt
-start with a real problem, not a cool technology
-seek feedback early — your own perspective is always biased
-design for the person who won't read the instructions
-resist overengineering; simplicity is the last thing you finish
-when you don't know something, build through it
-```
-
----
-
-### GitHub Signal
+### 🧭 How I work
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nakien0205&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github" alt="GitHub stats" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nakien0205&layout=compact&theme=github_dark&hide_border=true" alt="Top languages" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=800&color=8B949E&multiline=true&width=620&height=150&lines=%3E+start+with+a+real+problem%2C+not+a+cool+technology;%3E+seek+feedback+early+%E2%80%94+your+own+perspective+is+biased;%3E+design+for+the+person+who+won't+read+the+instructions;%3E+resist+overengineering%3B+simplicity+is+finished+last;%3E+when+you+don't+know+something%2C+build+through+it" alt="How I work" />
 </p>
 
 ---
 
-### Open to
+### 📊 GitHub Signal
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=nakien0205&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github&bg_color=0d1117" alt="GitHub stats" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nakien0205&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117" alt="Top languages" />
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=nakien0205&theme=github-dark-blue&hide_border=true&background=0d1117" alt="GitHub streak" />
+</p>
+<p align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=nakien0205&theme=github-compact&hide_border=true&area=true&bg_color=0d1117" alt="Contribution graph" />
+</p>
+
+<!-- Snake eating the contribution grid (generated by .github/workflows/snake.yml) -->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nakien0205/nakien0205/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nakien0205/nakien0205/output/github-snake.svg" />
+    <img alt="Contribution snake" src="https://raw.githubusercontent.com/nakien0205/nakien0205/output/github-snake-dark.svg" />
+  </picture>
+</p>
+
+---
+
+### 🤝 Open to
 
 AI/ML internships · research collaborations · feedback on the fairness app · anyone who's thought seriously about group dynamics and incentives
 
@@ -77,3 +96,8 @@ email      phongkhiem.waseco@gmail.com
 linkedin   linkedin.com/in/nguyen-trung-kien-jack
 portfolio  coming soon
 ```
+
+<!-- Animated wave footer -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" alt="footer" />
+</p>
